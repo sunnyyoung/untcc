@@ -37,6 +37,7 @@ xcuserdata/
 # Xcode Patch
 *.xcodeproj/*
 !*.xcodeproj/project.pbxproj
+!*.xcodeproj/project.xcproj
 !*.xcodeproj/xcshareddata/
 !*.xcodeproj/project.xcworkspace/
 !*.xcworkspace/contents.xcworkspacedata
@@ -50,3 +51,7 @@ xcuserdata/
 *.ipa
 *.dSYM.zip
 *.dSYM
+
+### Workspace ###
+
+/dist

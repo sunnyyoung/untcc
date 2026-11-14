@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scheme version="1.3">
+  <BuildAction parallelizeBuildables="YES" buildImplicitDependencies="YES">
+    <BuildActionEntries>
+      <BuildActionEntry buildForTesting="NO" buildForRunning="YES" buildForProfiling="YES" buildForArchiving="YES" buildForAnalyzing="YES">
+        <BuildableReference BuildableIdentifier="primary" BlueprintIdentifier="F030C64A90AD477AA33DF001" BuildableName="untcc" BlueprintName="untcc" ReferencedContainer="container:untcc.xcodeproj"/>
+      </BuildActionEntry>
+    </BuildActionEntries>
+  </BuildAction>
+  <LaunchAction buildConfiguration="Debug" selectedDebuggerIdentifier="Xcode.DebuggerFoundation.Debugger.LLDB" selectedLauncherIdentifier="Xcode.IDEFoundation.Launcher.LLDB" launchStyle="0" useCustomWorkingDirectory="NO" ignoresPersistentStateOnLaunch="NO" debugDocumentVersioning="YES">
+    <BuildableProductRunnable runnableDebuggingMode="0">
+      <BuildableReference BuildableIdentifier="primary" BlueprintIdentifier="F030C64A90AD477AA33DF001" BuildableName="untcc" BlueprintName="untcc" ReferencedContainer="container:untcc.xcodeproj"/>
+    </BuildableProductRunnable>
+  </LaunchAction>
+  <AnalyzeAction buildConfiguration="Debug"/>
+  <ArchiveAction buildConfiguration="Release" revealArchiveInOrganizer="YES"/>
+</Scheme>
