@@ -9,8 +9,9 @@ In-memory TCC bypass for macOS.
 
 ## Requirements
 
-- Apple silicon Mac running macOS 26 or later
+- Apple silicon Mac running macOS 15 or later
 - Root access and disabled SIP for injection
+- Boot argument `-arm64e_preview_abi` required on macOS 15: `sudo nvram boot-args="-arm64e_preview_abi"`
 
 ## Installation & Usage
 

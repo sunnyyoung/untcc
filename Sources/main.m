@@ -194,7 +194,9 @@ int main(int argc, const char *argv[]) {
         if (argc == 2 && strcmp(argv[1], "--help") == 0) {
             puts("Usage: untcc [probe | --help | --version]\n\n"
                  "Run without a command as root to maintain an in-memory TCC bypass in tccd.\n"
-                 "Injection requires Apple silicon, macOS 26 or later, and disabled SIP.\n"
+                 "Injection requires Apple silicon, macOS 15 or later, and disabled SIP.\n"
+                 "On macOS 15, the -arm64e_preview_abi boot argument is required:\n"
+                 "  sudo nvram boot-args=\"-arm64e_preview_abi\"\n"
                  "Stopping untcc leaves existing hooks active until tccd restarts.\n\n"
                  "probe reports current-process Accessibility and Screen Recording access as JSON.\n"
                  "It does not request access or require root; exits 0 if both are allowed, otherwise 1.");

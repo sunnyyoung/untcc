@@ -18,7 +18,8 @@ vmpal start "$vm" --wait
 for configuration in Debug Release; do
   printf '\nTesting %s\n' "$configuration"
   vmpal exec "$vm" -- /usr/bin/sudo -n /opt/homebrew/bin/brew services stop untcc
-  vmpal cp --admin "$PWD/dist/$configuration/untcc" "$vm:/opt/homebrew/opt/untcc/bin/untcc"
+  vmpal cp "$PWD/dist/$configuration/untcc" "$vm:/tmp/untcc-e2e-binary"
+  vmpal exec "$vm" -- /bin/bash -c 'sudo -n /bin/cp /tmp/untcc-e2e-binary /opt/homebrew/opt/untcc/bin/untcc && rm /tmp/untcc-e2e-binary'
   vmpal exec "$vm" -- /bin/bash -c "$(cat <<'GUEST_TESTS'
 set -euo pipefail
 

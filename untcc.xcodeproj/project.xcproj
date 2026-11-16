@@ -35,7 +35,7 @@
       "build-settings": {
         "ARCHS": "arm64e",
         "PRODUCT_BUNDLE_IDENTIFIER": "com.sunnyyoung.untcc",
-        "OTHER_LDFLAGS": ["-framework", "Foundation", "-framework", "CoreFoundation", "-framework", "ApplicationServices", "-framework", "CoreGraphics"]
+        "OTHER_LDFLAGS": ["-Wl,-no_mac_public_arm64e", "-framework", "Foundation", "-framework", "CoreFoundation", "-framework", "ApplicationServices", "-framework", "CoreGraphics"]
       }
     }
   ],
@@ -54,8 +54,8 @@
     "GCC_WARN_UNDECLARED_SELECTOR": "YES",
     "GCC_WARN_UNUSED_FUNCTION": "YES",
     "GCC_WARN_UNUSED_VARIABLE": "YES",
-    "MACOSX_DEPLOYMENT_TARGET": "26.0",
-    "MARKETING_VERSION": "1.0",
+    "MACOSX_DEPLOYMENT_TARGET": "15.0",
+    "MARKETING_VERSION": "1.1",
     "ONLY_ACTIVE_ARCH[config=Debug]": "YES",
     "PRODUCT_NAME": "$(TARGET_NAME)",
     "SDKROOT": "macosx"
